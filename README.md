@@ -10,3 +10,6 @@ Experiment codes about different estimators of Max Mean
 6. MeanOfAbsMean.m: Test the performance of the optimal estimator in Cai's settings, i.e., estimate 1/n\sum_{i}^{n}|\mu_i|.
 7. tmp.m: Calculate values of Term 1 and Term 2 in equation (38) of Cai's paper.
 8. ChebyshevPolyCoeff.mat/HermitePolyCoeff.mat: Coefficients of corresponding polynomials are pre-calcualted and stored here. 
+9. BayesianEst.m: Imlementation of Bayesian Estimator with prior N(0,a^2).
+10. ExpMaxEst.m: Csaba's estimator that calcualtes expectation of the max.
+11. Teststh.m: Call other functions to organise some experiments here.
