@@ -2,12 +2,15 @@ function mse=MeanOfAbsMean()
 % This code estimates T(\theta)=\frac{1}{n}\sum_{i=1}
 %^{n}|\mu_i|
 
-n=9;
-mu=[0.1 0.9 0.3 -0.3 -0.8 0.9 0.6 0.5 0.3];
-var=[1 1 1 1 1 1 1 1 1];
+mu=[-0.5,1];
+[~,n]=size(mu)
+var=ones(1,n);
 TrueAbsMuMean=sum(abs(mu))/n;
 N=1000;
 K=ceil(log(n)/(2*log(log(n))));
+if ~K>0
+    K=1;
+end
 Repeat=1000;
 mse=0;
 

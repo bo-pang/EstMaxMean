@@ -1,6 +1,6 @@
 function [WEMaxMean,MEMaxMean,Prob1,Prob2]=WEandME(mu1,mu2,var1,var2)
 
-N=100;
+N=1;
 K=2;
 M=2000;
 
