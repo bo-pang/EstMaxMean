@@ -1,6 +1,6 @@
 function MSE=BayesianEst(a,mu,var)
 N=1;
-Rept=2000;
+Rept=3000;
 MSE=0;
 
 for i=1:Rept
@@ -12,7 +12,9 @@ for i=1:Rept
    fun=@(y,Mu,Var) abs(y).*GaussianFunc(Mu,Var,y);
    AbsMu=integral(@(y)fun(y,muP,varP),-Inf,Inf);
    
-   MSE=MSE+(AbsMu-abs(mu))^2*GaussianFunc(mu,var,x);
+   MSE=MSE+(AbsMu-abs(mu))^2;
 end
+
+MSE=MSE/Rept;
 
 end
