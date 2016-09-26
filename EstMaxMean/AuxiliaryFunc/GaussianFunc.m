@@ -1,4 +1,4 @@
-function y=GaussianFunc(mu,var,x)
+function [y]=GaussianFunc(mu,var,x)
 
 [m,n]=size(x);
 for i=1:m
